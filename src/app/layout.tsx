@@ -4,6 +4,9 @@ import { twMerge } from 'tailwind-merge';
 
 import './globals.css';
 
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+
 const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -19,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="relative">
       <body className={twMerge(dmSans.className, 'antialiased bg-[#EAEEFE]')}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
