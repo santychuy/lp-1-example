@@ -1,3 +1,6 @@
+'use client';
+import { motion } from 'framer-motion';
+
 import TestimonialsColumn from '@/components/TestimonialsColumn';
 import { testimonials } from '@/constants/testimonials';
 
@@ -18,15 +21,17 @@ const Testimonials = () => (
           essencial tool for users around the world.
         </p>
       </div>
-      <div className="flex justify-center gap-6">
-        <TestimonialsColumn testimonials={firstColumn} />
+      <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
+        <TestimonialsColumn testimonials={firstColumn} duration={15} />
         <TestimonialsColumn
           testimonials={secondColumn}
-          className="hidden md:flex"
+          duration={17}
+          className="hidden md:block"
         />
         <TestimonialsColumn
           testimonials={thirdColumn}
-          className="hidden lg:flex"
+          duration={19}
+          className="hidden lg:block"
         />
       </div>
     </div>
