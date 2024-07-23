@@ -11,10 +11,10 @@ const ProductShowcase = () => (
         <div className="flex justify-center">
           <div className="tag">Boots your productivity</div>
         </div>
-        <h2 className="text-center section-title mt-5">
+        <h2 className="text-center section-title">
           A more effective way to track your progress
         </h2>
-        <p className="section-description mt-5">
+        <p className="section-description">
           Effortlessly turn your ideas into a fully functional, responsive, SaaS
           website in just minutes with this template
         </p>

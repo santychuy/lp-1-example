@@ -4,11 +4,11 @@ import CheckIcon from '@/assets/check.svg';
 import { pricingTiers } from '@/constants/pricing';
 
 const Pricing = () => (
-  <section className="py-24">
+  <section className="bg-white py-24">
     <div className="container">
       <div className="section-container">
         <h2 className="section-title text-center">Pricing</h2>
-        <p className="section-description mt-5">
+        <p className="section-description">
           Free forever. Upgrade for unlimited tasks, better security, and
           exclusive features
         </p>
@@ -19,7 +19,7 @@ const Pricing = () => (
           <div
             key={i}
             className={twMerge(
-              'p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full',
+              'card',
               tier.inverse && 'border-black bg-black text-white'
             )}
           >
